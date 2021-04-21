@@ -71,11 +71,11 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,4)                                 RC(3,5) RC(7,1) 
 
 //
 //_________________________________________________________________________________________________________
-//|  TAB  |   Q   |   W   |   E   |   R   |   T   |   Y   |   U   |   I   |   O   |   P   |      BSPC     |
+//|  ESC  |   Q   |   W   |   E   |   R   |   T   |   Y   |   U   |   I   |   O   |   P   |      BSPC     |
 //|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______________|
-//|    ESC    |   A   |   S   |   D   |   F   |   G   |   H   |   J   |   K   |   L   |   '   |    RET    |
+//|    TAB    |   A   |   S   |   D   |   F   |   G   |   H   |   J   |   K   |   L   |   '   |     ;     |
 //|________ __|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|___________|
-//|   LSHFT     |   Z   |   X   |   C   |   V   |   B   |   N   |   M   |   ,   |   .   |   ?   |  RSHFT  |
+//|   LSHFT     |   Z   |   X   |   C   |   V   |   B   |   N   |   M   |   ,   |   .   |   ?   |   RET   |
 //|_____________|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_________|
 //|  LCTRL  |  LGUI   |  LALT   |     MO1/SPACE   |        SPACE        |  MO2    | RGUI  |  RALT | RCTRL |
 //|_________|_________|_________|_________________|_____________________|_________|_______|_______|_______|
@@ -86,9 +86,9 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,4)                                 RC(3,5) RC(7,1) 
 
 		default_layer {
 			bindings = <
-&kp TAB    &kp Q     &kp W     &kp E        &kp R  &kp T  &kp Y  &kp U    &kp I      &kp O    &kp P      &kp BSPC  &kp BSPC
-&kp ESC    &kp A     &kp S     &kp D        &kp F  &kp G  &kp H  &kp J    &kp K      &kp L    &kp APOS   &kp RET
-&kp LSHFT  &kp Z     &kp X     &kp C        &kp V  &kp B  &kp N  &kp M    &kp COMMA  &kp DOT  &kp QUESTION  &kp RSHFT
+&kp ESC    &kp Q     &kp W     &kp E        &kp R  &kp T  &kp Y  &kp U    &kp I      &kp O    &kp P      &kp BSPC  &kp BSPC
+&kp TAB    &kp A     &kp S     &kp D        &kp F  &kp G  &kp H  &kp J    &kp K      &kp L    &kp APOS   &kp SEMI
+&kp LSHFT  &kp Z     &kp X     &kp C        &kp V  &kp B  &kp N  &kp M    &kp COMMA  &kp DOT  &kp QUESTION  &kp RET
 &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 SPACE         &kp SPACE              &mo 2      &kp RGUI &kp RALT   &kp RCTRL
 			>;
 		};
@@ -98,9 +98,9 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,4)                                 RC(3,5) RC(7,1) 
 //_________________________________________________________________________________________________________
 //| GRAVE |  1/!  |  2/@  |  3/#  |  4/$  |  5/%  |  6/^  |  7/&  |  8/*  |  9/(  |  0/)  |      DEL      |
 //|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______________|
-//|   none    | HOME  | PG_UP |   D   |   F   |   G   | LBKT  | LBKT  | EQUAL | BSLH  | FSLH  |    RET    |
-//|________ __|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|___________|
-//|   LSHFT     |  END  | PG_DN |   C   |   V   |   B   |   N   |   M   |   ,   |   -   |   UP  |  RSHFT  |
+//|   F1     |  F2   |  F3   |  F4   |  F5   |  F6   | LBKT  | LBKT  | EQUAL | BSLH  | FSLH  |    RET    |
+//|__________|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|___________|
+//|   LSHFT     |  F7   |  F8   |   F9  |  F10  |  F11  |  F12  |   M   |   ,   |   -   |   UP  |  RSHFT  |
 //|_____________|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_________|
 //|  LCTRL  |  LGUI   |  LALT   |     MO1/SPACE   |        SPACE        |   MO2   | LEFT  | DOWN  | RIGHT |
 //|_________|_________|_________|_________________|_____________________|_________|_______|_______|_______|
@@ -109,8 +109,8 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,4)                                 RC(3,5) RC(7,1) 
 		function_layer {
 			bindings = <
 &kp GRAVE  &kp N1    &kp N2     &kp N3  &kp N4  &kp N5  &kp N6    &kp N7    &kp N8     &kp N9     &kp N0    &kp DEL  &kp DEL
-&none      &kp HOME  &kp PG_UP  &trans  &trans  &trans  &kp LBKT  &kp LBKT  &kp EQUAL  &kp BSLH   &kp FSLH  &trans
-&trans     &kp END   &kp PG_DN  &trans  &trans  &trans  &trans    &trans    &trans     &kp MINUS  &kp UP    &trans
+&kp F1     &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp LBKT  &kp LBKT  &kp EQUAL  &kp BSLH   &kp FSLH  &trans
+&trans     &kp F7   &kp F8  &kp F9  &kp F10  &kp F11  &kp F12    &trans    &trans     &kp MINUS  &kp UP    &trans
 &trans     &trans    &trans     &trans          &trans                      &trans     &kp LEFT   &kp DOWN  &kp RIGHT
 			>;
 		};
@@ -123,7 +123,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,4)                                 RC(3,5) RC(7,1) 
 //|________ __|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|___________|
 //|   LSHFT     |BT_CLR |BT_PRV |BT_NXT |   V   |   B   |   N   |   M   |   ,   | btldr | reset |  RSHFT  |
 //|_____________|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_________|
-//|  LCTRL  |  LGUI   |  LALT   |     MO1/SPACE   |        SPACE        |  RALT   |VOL_UP |VOL_DN | C_PP  |
+//|  LCTRL  |  LGUI   |  LALT   |     MO1/SPACE   |        SPACE        |   MO2   |VOL_UP |VOL_DN | K_PP  |
 //|_________|_________|_________|_________________|_____________________|_________|_______|_______|_______|
 //		
 
@@ -132,7 +132,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,4)                                 RC(3,5) RC(7,1) 
 &kp F1      &kp F2       &kp F3       &kp F4       &kp F5   &kp F6   &kp F7   &kp F8   &kp F9         &kp F10       &kp F11  &kp F12
 &trans      &trans       &trans       &trans       &trans   &trans   &trans   &trans   &trans         &trans        &trans   &trans
 &trans      &bt BT_CLR   &bt BT_PRV   &bt BT_NXT   &trans   &trans   &trans   &trans   &bootloader    &reset                 &trans
-&trans      &trans       &trans       &trans                                  &trans   &kp C_VOL_UP   &kp C_VOL_DN           &kp C_PP
+&trans      &trans       &trans       &trans                                  &trans   &kp K_VOL_UP   &kp K_VOL_DN           &kp K_PP
 			>;  
 		};
 
