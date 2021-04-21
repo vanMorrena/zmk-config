@@ -7,3 +7,5 @@ git commit -m "[message]"
 git push
 
 himst an alex full o nanur ready to bus
+
+on ZMK discord, can paste lines of code then do "!dtgithub" which will trigger a bot to assess the code
