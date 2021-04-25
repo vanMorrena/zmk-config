@@ -129,7 +129,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,4)                                 RC(3,5) RC(7,1) 
 			bindings = <
 &none       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4  &bt BT_SEL 5  &bt BT_SEL 6  &bt BT_SEL 7   &bt BT_SEL 8  &bt BT_SEL 9  &trans
 &trans      &trans        &trans        &trans        &trans         &trans        &trans        &trans        &trans         &trans        &trans        &trans
-&trans      &bt BT_CLR    &bt BT_PRV    &bt BT_NXT    &trans         &trans        &trans        &trans        &bootloader    &reset        &trans        &trans
+&kp LSHFT   &bt BT_CLR    &bt BT_PRV    &bt BT_NXT    &trans         &trans        &trans        &trans        &bootloader    &reset        &trans        &trans
 &trans      &trans        &trans        &trans                       &trans                      &trans        &trans         &kp C_VOL_UP  &kp C_VOL_DN  &kp C_PP
 			>;  
 		};
